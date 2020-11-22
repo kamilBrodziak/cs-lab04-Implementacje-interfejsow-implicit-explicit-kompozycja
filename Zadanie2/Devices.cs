@@ -47,4 +47,8 @@ namespace Zadanie2 {
         void Scan(out IDocument document, IDocument.FormatType formatType);
     }
 
+    public interface IFax : IDevice {
+        void SendFax(in IDocument document, String to);
+    }
+
 }
